@@ -29,6 +29,7 @@ public class Main {
 
         ContaBancaria.mostrarClientes(contaBancariaList);
 
+
         System.out.println("Informe o valor do saque: ");
         double valorSaque = sc.nextDouble();
         sc.nextLine();
