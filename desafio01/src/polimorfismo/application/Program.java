@@ -5,17 +5,21 @@ import polimorfismo.entities.Cachorro;
 import polimorfismo.entities.Gato;
 import polimorfismo.entities.Vaca;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Program {
     public static void main(String[] args) {
 
-        Animal animal = new Animal();
-        Animal cachorro = new Cachorro();
-        Animal vaca = new Vaca();
-        Animal gato = new Gato();
+        List<Animal> animais = new ArrayList<>();
 
-        animal.fazerSom();
-        cachorro.fazerSom();
-        vaca.fazerSom();
-        gato.fazerSom();
+        animais.add(new Animal());
+        animais.add(new Cachorro());
+        animais.add(new Vaca());
+        animais.add(new Gato());
+
+        for (Animal animal : animais) {
+            animal.fazerSom();
+        }
     }
 }

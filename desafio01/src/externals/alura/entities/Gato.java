@@ -1,4 +1,4 @@
 package externals.alura.entities;
 
-public class Gato {
+public class Gato extends Animal {
 }
